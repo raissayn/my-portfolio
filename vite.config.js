@@ -1,16 +1,11 @@
-import { defineConfig } from 'vite'
-import tailwindcss from '@tailwindcss/vite'
-import { defineConfig } from 'vite'
+import { defineConfig } from 'vite' // Mantenha apenas uma importação de defineConfig
 import react from '@vitejs/plugin-react'
+import tailwindcss from '@tailwindcss/vite' // Mantenha apenas uma importação de tailwindcss
 
-// https://vite.dev/config/
-export default defineConfig({
-  plugins: [react()],
-})
-
-export default defineConfig({
-  plugins: [
-      react(),
-      tailwindcss(),
-  ],
+// https://vitejs.dev/config/
+export default defineConfig({ // Mantenha apenas UM export default
+    plugins: [
+        react(),
+        tailwindcss(), // Inclua o plugin do Tailwind aqui
+    ],
 })
