@@ -2,6 +2,7 @@ import { words } from "../constants/index.js";
 // Importando a imagem de fundo corretamente da pasta assets
 import heroBg from "../assets/tech/herobg.png";
 import Button from "../components/Button.jsx";
+import HeroExperience from "../components/HeroModels/HeroExperience.jsx";
 
 const Hero = () => {
     return (
@@ -46,13 +47,18 @@ const Hero = () => {
                             Hi, I'm Raissa, a developer based in MG - Brasil with a passion for code.
                         </p>
                         <Button
-                        className="md:w-80 md:h-16 w-60 h12"
+                        className="md:w-80 md:h-16 w-60 h-12"
                         id="button"
                         text="Veja meu trabalho"
                         />
                     </div>
                 </header>
                 {/*right: 3d model */}
+                <figure>
+                    <div className="hero-3d-layout">
+                    <HeroExperience />
+                    </div>
+                </figure>
             </div>
         </section>
     )
