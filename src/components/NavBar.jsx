@@ -8,9 +8,12 @@ const NavBar = () => {
             const isScrolling = window.scrollY > 10;
             setSrolled(true);
         }
+        window.addEventListener("scroll", handleScroll);
+
+        return () => window.removeEventListener("scroll", handleScroll);
     }, [])
     return (
-        <header className="navbar">
+        <header className={`navbar ${scrolled ? "scrolled" : "not-scrolled"}`}>
             <div className="inner">
                 <a className="logo" href="#hero">
                     RaissaDev

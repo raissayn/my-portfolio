@@ -25,6 +25,7 @@ import {
     threejs,
 } from "../assets";
 
+
 export const navLinks = [
     {
         id: "work",
@@ -288,6 +289,58 @@ const words = [
         imgPath: threejs,
     },
 ];
-
+const logoIconsList = [
+    {
+        imgPath: "/images/logos/company-logo-1.png",
+    },
+    {
+        imgPath: "/images/logos/company-logo-2.png",
+    },
+    {
+        imgPath: "/images/logos/company-logo-3.png",
+    },
+    {
+        imgPath: "/images/logos/company-logo-4.png",
+    },
+    {
+        imgPath: "/images/logos/company-logo-5.png",
+    },
+    {
+        imgPath: "/images/logos/company-logo-6.png",
+    },
+    {
+        imgPath: "/images/logos/company-logo-7.png",
+    },
+    {
+        imgPath: "/images/logos/company-logo-8.png",
+    },
+    {
+        imgPath: "/images/logos/company-logo-9.png",
+    },
+    {
+        imgPath: "/images/logos/company-logo-10.png",
+    },
+    {
+        imgPath: "/images/logos/company-logo-11.png",
+    },
+]
+{/* PRECISO MUDARR E COLOCAR CORRETAMENTE AS IMAGENS */}
+const abilities = [
+    {
+        imgPath: "/images/linkedin.png",
+        title : "Quality Focus",
+        desc: "minha descrição"
+    },
+    {
+        imgPath: "/images/logos/company-logo-1.png",
+        title : "Quality Focus 2",
+        desc: "minha descrição"
+    },
+    {
+        imgPath: "/images/logos/company-logo-1.png",
+        title : "Quality Focus 3",
+        desc: "minha descrição"
+    },
+]
 // export final
-export { services, technologies, experiences, testimonials, projects, words, counterItems };
+export { services, technologies, experiences, testimonials, projects, words, counterItems, logoIconsList, abilities };
