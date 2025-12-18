@@ -168,7 +168,12 @@ const experiences = [
         ],
     },
 ];
-
+const counterItems = [
+    {value: 10, suffix: "+", label:"Years of Experience"},
+    {value: 200, suffix: "+", label:"Years of Experience"},
+    {value: 190, suffix: "+", label:"Years of Experience"},
+    {value: 110, suffix: "%", label:"Years of Experience"},
+]
 const testimonials = [
     {
         testimonial:
@@ -280,5 +285,5 @@ const words = [
     },
 ];
 
-// export final para incluir 'words'
-export { services, technologies, experiences, testimonials, projects, words };
+// export final
+export { services, technologies, experiences, testimonials, projects, words, counterItems };
