@@ -5,6 +5,7 @@ import { words } from "../constants/index.js";
 import heroBg from "../assets/tech/herobg.png";
 import Button from "../components/Button.jsx";
 import HeroExperience from "../components/HeroModels/HeroExperience.jsx";
+import AnimatedCounter from "../components/HeroModels/AnimatedCounter.jsx";
 
 const Hero = () => {
     // 1. Criamos uma referência para isolar a animação neste componente
@@ -77,6 +78,8 @@ const Hero = () => {
                             id="button"
                             text="Veja meu trabalho"
                         />
+
+                        <AnimatedCounter />
                     </div>
                 </header>
 
