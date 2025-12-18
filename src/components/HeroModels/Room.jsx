@@ -10,7 +10,7 @@ export function Room(props) {
   // O material Rosa Neon (mantive igual)
   const pinkGlowMaterial = useMemo(() => {
     return new THREE.MeshStandardMaterial({
-      color: new THREE.Color("#ff0066"),
+      color: new THREE.Color("#f4b4c2"),
       emissive: new THREE.Color("#ff0066"),
       emissiveIntensity: 4,
       toneMapped: false,
@@ -37,7 +37,7 @@ export function Room(props) {
                         material={materials.Particle_2}
                     />
 
-                    {/* 2. SÓ ESTE SERÁ ROSA (apenas um terço das partículas) */}
+                    {/* 2. SÓ ESTE SERÁ ROSA */}
                     <mesh
                         name="Icosphere001_Particle_2_0_1"
                         castShadow
