@@ -58,7 +58,12 @@ const ExperienceSection = () => {
     return (
         <section id="experience" ref={containerRef} className="w-full md:mt-40 mt-20 section-padding xl:px-0">
             <div className="w-full h-full md:px-20 px-5" >
-                <TitleHeader title="Professional Work Experience" sub="My Career Overview" />
+
+                {/* 2. Uso simplificado com o novo estilo Rosa embutido no componente */}
+                <TitleHeader
+                    title="Professional Work Experience"
+                    sub="My Career Overview"
+                />
 
                 <div className="mt-32 relative">
                     <div className="relative z-50 xl:space-y-32 space-y-10">
@@ -76,10 +81,8 @@ const ExperienceSection = () => {
                                     <div className="flex items-start h-full">
                                         <div className="timeline-wrapper flex h-full">
                                             <div className="timeline relative flex h-full min-h-[200px]">
-                                                {/* MUDANÇA 1: left-0 -> left-8 (Centraliza a linha no meio do logo de size-16) */}
                                                 <div className="gradient-line w-1 h-full bg-gradient-to-b from-white/20 to-transparent absolute left-8 top-0 origin-top -translate-x-1/2"></div>
 
-                                                {/* MUDANÇA 2: Removi 'ps-10' para que o logo comece alinhado com a linha */}
                                                 <div className="expText flex xl:gap-20 md:gap-10 gap-5 relative z-20 pb-10">
                                                     <div className="timeline-logo shrink-0">
                                                         <img src={card.logoPath} alt="logo" className="size-16 object-contain" />

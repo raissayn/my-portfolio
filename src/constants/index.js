@@ -385,5 +385,25 @@ const expCards = [
         ] // Fechamento do array adicionado
     }
 ];
-// export final
-export { services, technologies, experiences, testimonials, projects, words, counterItems, logoIconsList, abilities,  expCards };
+// Ajuste os caminhos conforme onde você salvou suas imagens PNG/SVG
+const techStackIcons = [
+    {
+        name: "React",
+        icon: "/assets/tech/react.png", // Caminho da imagem 2D
+    },
+    {
+        name: "Three.js",
+        icon: "/assets/tech/threejs.png",
+    },
+    {
+        name: "Python",
+        icon: "/assets/tech/python.png",
+    },
+    {
+        name: "Node",
+        icon: "/assets/tech/node.png",
+    },
+    // Adicione quantas quiser, agora é fácil!
+];
+
+export { services, technologies, experiences, testimonials, projects, words, counterItems, logoIconsList, abilities,  expCards, techStackIcons };

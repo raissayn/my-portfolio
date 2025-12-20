@@ -27,7 +27,7 @@ const ShowcaseSection = () => {
                     y: 0,
                     opacity: 1,
                     duration: 1,
-                    delay: (index % 3) * 0.15, // Efeito cascata suave por coluna
+                    delay: (index % 3) * 0.15,
                     scrollTrigger: {
                         trigger: card,
                         start: 'top bottom-=80',
@@ -41,11 +41,23 @@ const ShowcaseSection = () => {
     return (
         <section id="work" ref={sectionRef} className="w-full bg-black py-20 overflow-hidden">
             <div className="w-full px-6 md:px-12">
-                <h2 className="text-[#f4b4c2] text-5xl md:text-6xl font-bold mb-16 uppercase tracking-tighter italic">
-                    Selected Works
-                </h2>
 
-                {/* Grid: 1 col no mobile, 3 col no desktop (Lg) */}
+                {/* --- HEADER MANUAL --- */}
+                <div className="flex flex-col items-center justify-center text-center mb-16">
+                    {/* 1. Título Principal (Grande) */}
+                    <h2 className="text-[#f4b4c2] text-5xl md:text-6xl font-bold tracking-tighter italic mb-8">
+                        Selected Works
+                    </h2>
+
+                    {/* 2. Subtítulo com Borda (Estilo Badge/Tag) */}
+                    <div className="inline-block border border-[#f4b4c2] rounded-full px-6 py-2 bg-[#f4b4c2]/5">
+                        <p className="text-[#f4b4c2] text-sm md:text-base font-medium tracking-widest uppercase">
+                            Highlights of my recent development journey
+                        </p>
+                    </div>
+                </div>
+                {/* --------------------- */}
+
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-12">
                     {projectsData.map((project, index) => (
                         <div
@@ -53,17 +65,12 @@ const ShowcaseSection = () => {
                             ref={(el) => (cardsRef.current[index] = el)}
                             className="group w-full flex flex-col"
                         >
-                            {/* Wrapper da Imagem com Borda Rosa Fina */}
                             <div className="relative overflow-hidden rounded-xl border border-[#f4b4c2]/30 bg-[#111] transition-all duration-500 group-hover:border-[#f4b4c2] group-hover:shadow-[0_0_20px_rgba(244,180,194,0.15)]">
-
-                                {/* caber 3  */}
                                 <img
                                     src={project.img}
                                     alt={project.title}
                                     className="w-full h-[350px] md:h-[450px] object-cover transition-transform duration-1000 group-hover:scale-105"
                                 />
-
-                                {/* Overlay de Descrição */}
                                 <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 flex flex-col justify-end p-8 text-center md:text-left">
                                     <div className="transform translate-y-6 group-hover:translate-y-0 transition-transform duration-500">
                                         <h3 className="text-[#f4b4c2] font-bold text-2xl mb-2">{project.title}</h3>
@@ -76,13 +83,9 @@ const ShowcaseSection = () => {
                                         >
                                             VIEW PROJECT
                                         </a>
-
-                                        {/* lógica para conseguir clicar no link do projeto!! */}
                                     </div>
                                 </div>
                             </div>
-
-                            {/* Info inferior */}
                             <div className="mt-4 flex justify-between items-center px-1">
                                 <h3 className="text-white text-lg font-light tracking-wide uppercase">{project.title}</h3>
                                 <span className="text-[#f4b4c2]/40 font-mono text-sm">0{index + 1}</span>
