@@ -342,5 +342,48 @@ const abilities = [
         desc: "minha descrição"
     },
 ]
+
+const expCards = [
+    {
+        review: "AAAAA",
+        imgPath: "/images/review.png",
+        logoPath: "/images/logos/company-logo-1.png",
+        title: "sla",
+        date: "aaaa",
+        responsibilities: [
+            "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+        ] // Fechamento do array adicionado
+    },
+    {
+        review: "AAAAA",
+        imgPath: "/images/review.png",
+        logoPath: "/images/logos/company-logo-1.png",
+        title: "sla",
+        date: "aaaa",
+        responsibilities: [
+            "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+        ] // Fechamento do array adicionado
+    },
+    {
+        review: "AAAAA",
+        imgPath: "/images/review.png",
+        logoPath: "/images/logos/company-logo-1.png",
+        title: "sla",
+        date: "aaaa",
+        responsibilities: [
+            "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+        ] // Fechamento do array adicionado
+    },
+    {
+        review: "AAAAA",
+        imgPath: "/images/review.png",
+        logoPath: "/images/logos/company-logo-1.png",
+        title: "sla",
+        date: "aaaa",
+        responsibilities: [
+            "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+        ] // Fechamento do array adicionado
+    }
+];
 // export final
-export { services, technologies, experiences, testimonials, projects, words, counterItems, logoIconsList, abilities };
+export { services, technologies, experiences, testimonials, projects, words, counterItems, logoIconsList, abilities,  expCards };
