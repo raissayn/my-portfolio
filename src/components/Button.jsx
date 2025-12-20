@@ -18,7 +18,7 @@ const Button = ({ text, className, id }) => {
         <div className="cta-button group">
         <div className="bg-circle"/>
         <p className="text">
-            {text}{/*posso mudar para confira meu trabalho*/}
+            {text}{/*posso mudar para confira ..meu trabalho*/}
         </p>
             <div className="arrow-wrapper">
                 <img src="/images/arrow-down.svg" alt="arrow" />
