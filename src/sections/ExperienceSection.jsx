@@ -59,7 +59,6 @@ const ExperienceSection = () => {
         <section id="experience" ref={containerRef} className="w-full md:mt-40 mt-20 section-padding xl:px-0">
             <div className="w-full h-full md:px-20 px-5" >
 
-                {/* 2. Uso simplificado com o novo estilo Rosa embutido no componente */}
                 <TitleHeader
                     title="Professional Work Experience"
                     sub="My Career Overview"
@@ -81,7 +80,8 @@ const ExperienceSection = () => {
                                     <div className="flex items-start h-full">
                                         <div className="timeline-wrapper flex h-full">
                                             <div className="timeline relative flex h-full min-h-[200px]">
-                                                <div className="gradient-line w-1 h-full bg-gradient-to-b from-white/20 to-transparent absolute left-8 top-0 origin-top -translate-x-1/2"></div>
+
+                                                <div className="gradient-line w-1 h-full bg-gradient-to-b from-[#f4b4c2] to-[#ff0066] absolute left-8 top-0 origin-top -translate-x-1/2"></div>
 
                                                 <div className="expText flex xl:gap-20 md:gap-10 gap-5 relative z-20 pb-10">
                                                     <div className="timeline-logo shrink-0">
@@ -95,9 +95,13 @@ const ExperienceSection = () => {
                                                         <p className="my-5 text-white/50">
                                                             {card.date}
                                                         </p>
-                                                        <p className="text-[#839cb5] italic">
+
+                                                        {/* --- ALTERAÇÃO EXTRA: TEXTO --- */}
+                                                        {/* Mudei de text-[#839cb5] (azul) para text-[#f4b4c2] (rosa claro) para sumir com o azul */}
+                                                        <p className="text-[#f4b4c2] italic">
                                                             Responsibilities
                                                         </p>
+
                                                         <ul className="list-disc ms-5 mt-5 flex flex-col gap-5 text-white/70">
                                                             {card.responsibilities.map((responsibility, idx) => (
                                                                 <li key={idx} className="text-lg leading-relaxed">

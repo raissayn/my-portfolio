@@ -2,6 +2,7 @@ import React, { useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from '@gsap/react';
+import TitleHeader from "../components/HeroModels/TitleHeader.jsx";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -42,21 +43,10 @@ const ShowcaseSection = () => {
         <section id="work" ref={sectionRef} className="w-full bg-black py-20 overflow-hidden">
             <div className="w-full px-6 md:px-12">
 
-                {/* --- HEADER MANUAL --- */}
-                <div className="flex flex-col items-center justify-center text-center mb-16">
-                    {/* 1. Título Principal (Grande) */}
-                    <h2 className="text-[#f4b4c2] text-5xl md:text-6xl font-bold tracking-tighter italic mb-8">
-                        Selected Works
-                    </h2>
-
-                    {/* 2. Subtítulo com Borda (Estilo Badge/Tag) */}
-                    <div className="inline-block border border-[#f4b4c2] rounded-full px-6 py-2 bg-[#f4b4c2]/5">
-                        <p className="text-[#f4b4c2] text-sm md:text-base font-medium tracking-widest uppercase">
-                            Highlights of my recent development journey
-                        </p>
-                    </div>
-                </div>
-                {/* --------------------- */}
+                <TitleHeader
+                    title="Selected Works"
+                    sub="Highlights of my recent development journey"
+                />
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-12">
                     {projectsData.map((project, index) => (

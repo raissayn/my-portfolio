@@ -61,7 +61,7 @@ const Hero = () => {
                     <a href="#work" className="hero-text-anim mt-6 inline-block">
                         <Button
                             className="md:w-80 md:h-16 w-60 h-12 text-lg font-bold"
-                            id="button"
+                            id="work"
                             text="Veja meu trabalho"
                         />
                     </a>
