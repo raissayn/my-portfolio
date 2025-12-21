@@ -44,8 +44,8 @@ const ShowcaseSection = () => {
             <div className="w-full px-6 md:px-12">
 
                 <TitleHeader
-                    title="Selected Works"
-                    sub="Highlights of my recent development journey"
+                    title="Meus Projetos"
+                    sub="Destaques da minha recente jornada de desenvolvimento"
                 />
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-12">
