@@ -48,7 +48,7 @@ const Hero = () => {
                         <span className="text-[#f4b4c2]">Nunes Peret</span>
                     </h1>
 
-                    {/* ALTERAÇÃO AQUI: Degradê de rosa claro para o novo rosa forte */}
+                    {/* Degradê de rosa claro para o novo rosa forte */}
                     <h2 className="hero-text-anim text-2xl md:text-4xl font-semibold text-gray-200">
                         Desenvolvedora <span className="bg-gradient-to-r from-[#f4b4c2] to-[#ff0066] bg-clip-text text-transparent">Backend</span>
                     </h2>
