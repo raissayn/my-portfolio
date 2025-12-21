@@ -7,12 +7,12 @@ import TitleHeader from "../components/HeroModels/TitleHeader.jsx";
 gsap.registerPlugin(ScrollTrigger);
 
 const projectsData = [
-    { id: 1, title: "Ryde App", desc: "Plataforma de caronas com React Native.", img: "/images/project1.png", link: "https://github.com/raissayn/FAT-simulador-SO" },
-    { id: 2, title: "Library Platform", desc: "Gestão de livros e usuários.", img: "/images/project2.png" },
-    { id: 3, title: "YC Directory", desc: "Showcase de Startups modernas.", img: "/images/project3.png" },
-    { id: 4, title: "E-Commerce", desc: "Loja virtual com Next.js.", img: "/images/project4.png" },
-    { id: 5, title: "Dashboard AI", desc: "Painel de controle com análise de dados.", img: "/images/project5.png" },
-    { id: 6, title: "Social Connect", desc: "Rede social focada em desenvolvedores.", img: "/images/project6.png" },
+    { id: 1, title: "Projeto fictício!", desc: "Plataforma de caronas com React Native.", img: "/images/project1.png", link: "https://github.com/raissayn/FAT-simulador-SO" },
+    { id: 2, title: "Projeto fictício!", desc: "Gestão de livros e usuários.", img: "/images/project2.png" },
+    { id: 3, title: "Projeto fictício!", desc: "Showcase de Startups modernas.", img: "/images/project3.png" },
+    { id: 4, title: "Em andamento", desc: "Loja virtual com Next.js.", img: "/images/project4.png" },
+    { id: 5, title: "Em andamento", desc: "Painel de controle com análise de dados.", img: "/images/project5.png" },
+    { id: 6, title: "Em andamento", desc: "Rede social focada em desenvolvedores.", img: "/images/project6.png" },
 ];
 
 const ShowcaseSection = () => {

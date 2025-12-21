@@ -54,7 +54,7 @@ const Hero = () => {
                     </h2>
 
                     <p className="hero-text-anim text-gray-300 text-lg md:text-xl max-w-xl leading-relaxed mt-2">
-                        Especializada em <strong>Java</strong> e <strong>C++</strong>. Desenvolvo soluções backend focadas em performance, escalabilidade e boas práticas.
+                        Desenvolvo soluções backend focadas em <strong>performance</strong>, <strong>escalabilidade</strong> e <strong>boas práticas</strong>.
                     </p>
 
                     {/* BOTÃO ÚNICO */}

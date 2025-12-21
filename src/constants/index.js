@@ -9,6 +9,10 @@ import apIcon from "../assets/tech/ApSimbolo.png";
 import carrent from "../assets/tech/herobg.png";
 import jobit from "../assets/tech/tailwind.png";
 import tripguide from "../assets/tech/typescript.png";
+import sisIcon from "../assets/tech/sis.png";
+import uniIcon from "../assets/tech/unifal.png";
+import profIcon from "../assets/tech/prof.png";
+import studyIcon from "../assets/tech/study.png";
 
 export const navLinks = [
     {
@@ -114,7 +118,7 @@ const abilities = [
 const expCards = [
     {
         imgPath: "/images/review.png",
-        logoPath: "/images/logos/company-logo-1.png",
+        logoPath: uniIcon,
         title: "Estudante de Ciência da Computação na Universidade Federal de Alfenas",
         date: "2024 - 2027",
         responsibilities: [
@@ -124,7 +128,7 @@ const expCards = [
     },
     {
         imgPath: "/images/review.png",
-        logoPath: "/images/logos/company-logo-1.png",
+        logoPath: profIcon,
         title: "Professora Voluntária – Projeto Desenvolvimento Humano: Saúde, Educação e Trabalho",
         date: "março 2025 - julho 2025",
         responsibilities: [
@@ -133,8 +137,8 @@ const expCards = [
         ]
     },
     {
-        imgPath: "/images/review.png",
-        logoPath: "/images/logos/company-logo-1.png",
+        imgPath: sisIcon,
+        logoPath: sisIcon,
         title: " Bolsista PET TECHSUS",
         date: "Março 2024 - Atualmente",
         responsibilities: [
@@ -144,7 +148,7 @@ const expCards = [
     },
     {
         imgPath: "/images/review.png",
-        logoPath: "/images/logos/company-logo-1.png",
+        logoPath: studyIcon,
         title: "Busca constante de aprendizados",
         date: "",
         responsibilities: [
