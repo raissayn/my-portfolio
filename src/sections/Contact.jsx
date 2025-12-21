@@ -6,14 +6,15 @@ const ContactSection = () => {
     const formRef = useRef();
     const [loading, setLoading] = useState(false);
 
-    // Estado do formulário
+    // Variável para facilitar a reutilização do estilo do degradê de texto
+    const textGradientClass = "bg-gradient-to-r from-[#f4b4c2] to-[#ff0066] bg-clip-text text-transparent font-bold";
+
     const [formData, setFormData] = useState({
         name: '',
         email: '',
         message: ''
     });
 
-    // Função para atualizar os inputs
     const handleFormChange = (e) => {
         const { name, value } = e.target;
         setFormData(prevState => ({
@@ -22,16 +23,15 @@ const ContactSection = () => {
         }));
     };
 
-    // Função de envio do EmailJS
     const handleSubmit = (e) => {
         e.preventDefault();
         setLoading(true);
 
         emailjs.sendForm(
-            'service_9kb2kh7',        // Seu Service ID (do print anterior)
-            'template_1ghp1gn', // <--- Substitua pelo seu Template ID
+            'service_9kb2kh7',
+            'template_1ghp1gn',
             formRef.current,
-            'LnaRiwXei9Ms2rx-G'   // <--- Substitua pela sua Public Key
+            'LnaRiwXei9Ms2rx-G'
         )
             .then((result) => {
                 alert('Mensagem enviada com sucesso! Em breve entrarei em contato.');
@@ -48,8 +48,9 @@ const ContactSection = () => {
     return (
         <section id="contact" className="py-20 px-5 md:px-12 w-full">
             <div className="max-w-6xl mx-auto">
+                {/* 1. Título com Degradê na palavra Contato */}
                 <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center text-white">
-                    Entre em <span className="text-[#f4b4c2]">Contato</span>
+                    Entre em <span className={textGradientClass}>Contato</span>
                 </h2>
 
                 <div className="grid md:grid-cols-2 gap-12 bg-white/5 p-8 rounded-2xl border border-white/10">
@@ -57,13 +58,15 @@ const ContactSection = () => {
                     {/* LADO ESQUERDO: Informações */}
                     <div className="space-y-6 flex flex-col justify-center">
                         <p className="text-white/60 leading-relaxed text-lg">
-                            Estou sempre aberta a novas oportunidades e desafios! Envie uma mensagem ou conecte-se comigo pelas redes.
+
+                            Aberta a novas oportunidades e desafios. Vamos conversar? Envie uma mensagem ou conecte-se comigo pelas redes.
+
                         </p>
 
                         <div className="space-y-4">
                             <div className="flex items-center space-x-4">
+                                {/* Ícones mantidos com cor sólida (#f4b4c2) pois degradê em stroke SVG é complexo sem hacks */}
                                 <Mail className="text-[#f4b4c2] flex-shrink-0" size={24} />
-                                {/* Corrigi para gmail para bater com seu print anterior */}
                                 <a href="mailto:raissan084@gmail.com" className="text-white/80 hover:text-[#f4b4c2] transition-colors">
                                     raissan084@gmail.com
                                 </a>
@@ -71,12 +74,11 @@ const ContactSection = () => {
 
                             <div className="flex items-center space-x-4">
                                 <MapPin className="text-[#f4b4c2] flex-shrink-0" size={24} />
-                                <span className="text-white/80">MG - Brasil</span>
+                                <span className="text-white/80">Alfenas MG - Brasil</span>
                             </div>
                         </div>
 
                         <div className="flex space-x-6 pt-4">
-                            {/* Corrigi o erro de digitação (tinha uma / antes do https) */}
                             <a href="https://github.com/raissayn" target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-[#f4b4c2] transition-colors">
                                 <Github size={32} />
                             </a>
@@ -93,7 +95,10 @@ const ContactSection = () => {
                         className="space-y-6"
                     >
                         <div>
-                            <label htmlFor="name" className="block text-sm font-medium text-[#f4b4c2] mb-2">Nome</label>
+                            {/* 2. Label Nome com Degradê */}
+                            <label htmlFor="name" className={`block text-sm mb-2 ${textGradientClass}`}>
+                                Nome
+                            </label>
                             <input
                                 type="text"
                                 id="name"
@@ -106,7 +111,10 @@ const ContactSection = () => {
                             />
                         </div>
                         <div>
-                            <label htmlFor="email" className="block text-sm font-medium text-[#f4b4c2] mb-2">Email</label>
+                            {/* 2. Label Email com Degradê */}
+                            <label htmlFor="email" className={`block text-sm mb-2 ${textGradientClass}`}>
+                                Email
+                            </label>
                             <input
                                 type="email"
                                 id="email"
@@ -119,7 +127,10 @@ const ContactSection = () => {
                             />
                         </div>
                         <div>
-                            <label htmlFor="message" className="block text-sm font-medium text-[#f4b4c2] mb-2">Mensagem</label>
+                            {/* 2. Label Mensagem com Degradê */}
+                            <label htmlFor="message" className={`block text-sm mb-2 ${textGradientClass}`}>
+                                Mensagem
+                            </label>
                             <textarea
                                 id="message"
                                 name="message"
@@ -132,11 +143,11 @@ const ContactSection = () => {
                             ></textarea>
                         </div>
 
-                        {/* Botão com estado de Loading */}
+                        {/* 3. Botão com Fundo Degradê */}
                         <button
                             type="submit"
                             disabled={loading}
-                            className="w-full flex items-center justify-center space-x-2 bg-[#f4b4c2] text-black px-6 py-3 rounded-lg font-bold hover:bg-[#f4b4c2]/90 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
+                            className="w-full flex items-center justify-center space-x-2 bg-gradient-to-r from-[#f4b4c2] to-[#ff0066] text-white px-6 py-3 rounded-lg font-bold hover:shadow-[0_0_20px_rgba(255,0,102,0.4)] transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
                         >
                             {loading ? (
                                 <span>Enviando...</span>

@@ -15,29 +15,28 @@ import {
     git,
     figma,
     docker,
-    meta,
-    starbucks,
-    tesla,
-    shopify,
     carrent,
     jobit,
     tripguide,
     threejs,
 } from "../assets";
 
+import javaIcon from "../assets/tech/javaSimbolo.png";
+import gitIcon from "../assets/tech/gitSimbolo.png";
+import cmIcon from "../assets/tech/Cmsimbolo.png";
 
 export const navLinks = [
     {
         id: "work",
-        title: "Work",
+        title: "Projetos",
     },
     {
         id: "experience",
-        title: "Experience",
+        title: "Sobre",
     },
     {
         id: "skills",
-        title: "Skills",
+        title: "Habilidades",
     },
 ];
 
@@ -115,60 +114,6 @@ const technologies = [
     },
 ];
 
-const experiences = [
-    {
-        title: "React.js Developer",
-        company_name: "Starbucks",
-        icon: starbucks,
-        iconBg: "#383E56",
-        date: "March 2020 - April 2021",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-    {
-        title: "React Native Developer",
-        company_name: "Tesla",
-        icon: tesla,
-        iconBg: "#E6DEDD",
-        date: "Jan 2021 - Feb 2022",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-    {
-        title: "Web Developer",
-        company_name: "Shopify",
-        icon: shopify,
-        iconBg: "#383E56",
-        date: "Jan 2022 - Jan 2023",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-    {
-        title: "Full stack Developer",
-        company_name: "Meta",
-        icon: meta,
-        iconBg: "#E6DEDD",
-        date: "Jan 2023 - Present",
-        points: [
-            "Developing and maintaining web applications using React.js and other related technologies.",
-            "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-            "Implementing responsive design and ensuring cross-browser compatibility.",
-            "Participating in code reviews and providing constructive feedback to other developers.",
-        ],
-    },
-];
 const counterItems = [
     {value: 10, suffix: "+", label:"Years of Experience"},
     {value: 200, suffix: "+", label:"Years of Experience"},
@@ -267,60 +212,7 @@ const projects = [
         source_code_link: "https://github.com/",
     },
 ];
-const words = [
-    {
-        text: "HTML",
-        imgPath: html,
-    },
-    {
-        text: "CSS",
-        imgPath: css,
-    },
-    {
-        text: "React",
-        imgPath: reactjs,
-    },
-    {
-        text: "ThreeJS",
-        imgPath: threejs,
-    },
-];
-const logoIconsList = [
-    {
-        imgPath: "/images/logos/company-logo-1.png",
-    },
-    {
-        imgPath: "/images/logos/company-logo-2.png",
-    },
-    {
-        imgPath: "/images/logos/company-logo-3.png",
-    },
-    {
-        imgPath: "/images/logos/company-logo-4.png",
-    },
-    {
-        imgPath: "/images/logos/company-logo-5.png",
-    },
-    {
-        imgPath: "/images/logos/company-logo-6.png",
-    },
-    {
-        imgPath: "/images/logos/company-logo-7.png",
-    },
-    {
-        imgPath: "/images/logos/company-logo-8.png",
-    },
-    {
-        imgPath: "/images/logos/company-logo-9.png",
-    },
-    {
-        imgPath: "/images/logos/company-logo-10.png",
-    },
-    {
-        imgPath: "/images/logos/company-logo-11.png",
-    },
-]
-{/* PRECISO MUDARR E COLOCAR CORRETAMENTE AS IMAGENS */}
+{/* não usando ainda  */}
 const abilities = [
     {
         imgPath: "/images/linkedin.png",
@@ -341,65 +233,70 @@ const abilities = [
 
 const expCards = [
     {
-        review: "AAAAA",
         imgPath: "/images/review.png",
         logoPath: "/images/logos/company-logo-1.png",
-        title: "sla",
-        date: "aaaa",
+        title: "Estudante de Ciência da Computação na Universidade Federal de Alfenas",
+        date: "2024 - 2027",
         responsibilities: [
-            "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
-        ] // Fechamento do array adicionado
+            "O bacharelado em Ciência da Computação tem contribuído para o aprimoramento dos meus conhecimentos" +
+            " teóricos e práticos, estimulando o desenvolvimento do pensamento lógico e crítico. Atualmente, no 4º período, possuo uma base sólida em abstração e resolução de problemas."
+        ]
     },
     {
-        review: "AAAAA",
         imgPath: "/images/review.png",
         logoPath: "/images/logos/company-logo-1.png",
-        title: "sla",
-        date: "aaaa",
+        title: "Professora Voluntária – Projeto Desenvolvimento Humano: Saúde, Educação e Trabalho",
+        date: "março 2025 - julho 2025",
         responsibilities: [
-            "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
-        ] // Fechamento do array adicionado
+            "A atuação como professora voluntária contribuiu para o desenvolvimento das minhas soft skills, " +
+            "como trabalho em equipe, comunicação e habilidades de ensino, por meio da capacitação de crianças e adolescentes em situação de vulnerabilidade social em informática básica e lógica de programação."
+        ]
     },
     {
-        review: "AAAAA",
         imgPath: "/images/review.png",
         logoPath: "/images/logos/company-logo-1.png",
         title: "sla",
-        date: "aaaa",
+        date: "Março 2024 - Atualmente",
         responsibilities: [
             "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
-        ] // Fechamento do array adicionado
+        ]
     },
     {
-        review: "AAAAA",
         imgPath: "/images/review.png",
         logoPath: "/images/logos/company-logo-1.png",
-        title: "sla",
-        date: "aaaa",
+        title: "Busca constante de aprendizados",
+        date: "",
         responsibilities: [
             "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
-        ] // Fechamento do array adicionado
-    }
+        ]
+    },
 ];
-// Ajuste os caminhos conforme onde você salvou suas imagens PNG/SVG
 const techStackIcons = [
     {
-        name: "React",
-        icon: "/assets/tech/react.png", // Caminho da imagem 2D
+        name: "Java",
+        icon: javaIcon,
+        percentage: 80,
     },
     {
-        name: "Three.js",
-        icon: "/assets/tech/threejs.png",
+        name: "Git & GitHub",
+        icon: gitIcon,
+        percentage: 98,
     },
     {
-        name: "Python",
-        icon: "/assets/tech/python.png",
+        name: "C++",
+        icon: cmIcon,
+        percentage: 60,
+    },
+    {
+        name: "VS Code",
+        icon: "/assets/tech/node.png",
+        percentage: 100,
     },
     {
         name: "Node",
         icon: "/assets/tech/node.png",
+        percentage: 10,
     },
-    // Adicione quantas quiser, agora é fácil!
 ];
 
-export { services, technologies, experiences, testimonials, projects, words, counterItems, logoIconsList, abilities,  expCards, techStackIcons };
+export { services, technologies, testimonials, projects, counterItems, abilities,  expCards, techStackIcons };
