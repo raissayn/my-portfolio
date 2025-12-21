@@ -48,13 +48,13 @@ const Hero = () => {
                         <span className="text-[#f4b4c2]">Nunes Peret</span>
                     </h1>
 
-                    {/* ALTERAÇÃO AQUI: Degradê de rosa claro para o novo rosa forte */}
+                    {/* Degradê de rosa claro para o novo rosa forte */}
                     <h2 className="hero-text-anim text-2xl md:text-4xl font-semibold text-gray-200">
                         Desenvolvedora <span className="bg-gradient-to-r from-[#f4b4c2] to-[#ff0066] bg-clip-text text-transparent">Backend</span>
                     </h2>
 
                     <p className="hero-text-anim text-gray-300 text-lg md:text-xl max-w-xl leading-relaxed mt-2">
-                        Especializada em <strong>Java</strong> e <strong>C++</strong>. Desenvolvo soluções backend focadas em performance, escalabilidade e boas práticas.
+                        Desenvolvo soluções backend focadas em <strong>performance</strong>, <strong>escalabilidade</strong> e <strong>boas práticas</strong>.
                     </p>
 
                     {/* BOTÃO ÚNICO */}

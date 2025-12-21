@@ -1,29 +1,18 @@
-import {
-    mobile,
-    backend,
-    creator,
-    web,
-    javascript,
-    typescript,
-    html,
-    css,
-    reactjs,
-    redux,
-    tailwind,
-    nodejs,
-    mongodb,
-    git,
-    figma,
-    docker,
-    carrent,
-    jobit,
-    tripguide,
-    threejs,
-} from "../assets";
+
 
 import javaIcon from "../assets/tech/javaSimbolo.png";
 import gitIcon from "../assets/tech/gitSimbolo.png";
 import cmIcon from "../assets/tech/Cmsimbolo.png";
+import pyIcon from "../assets/tech/PySimbolo.png";
+import idIcon from "../assets/tech/IdSimbolo.png";
+import apIcon from "../assets/tech/ApSimbolo.png";
+import carrent from "../assets/tech/herobg.png";
+import jobit from "../assets/tech/tailwind.png";
+import tripguide from "../assets/tech/typescript.png";
+import sisIcon from "../assets/tech/sis.png";
+import uniIcon from "../assets/tech/unifal.png";
+import profIcon from "../assets/tech/prof.png";
+import studyIcon from "../assets/tech/study.png";
 
 export const navLinks = [
     {
@@ -40,112 +29,7 @@ export const navLinks = [
     },
 ];
 
-const services = [
-    {
-        title: "Web Developer",
-        icon: web,
-    },
-    {
-        title: "React Native Developer",
-        icon: mobile,
-    },
-    {
-        title: "Backend Developer",
-        icon: backend,
-    },
-    {
-        title: "Content Creator",
-        icon: creator,
-    },
-];
 
-const technologies = [
-    {
-        name: "HTML 5",
-        icon: html,
-    },
-    {
-        name: "CSS 3",
-        icon: css,
-    },
-    {
-        name: "JavaScript",
-        icon: javascript,
-    },
-    {
-        name: "TypeScript",
-        icon: typescript,
-    },
-    {
-        name: "React JS",
-        icon: reactjs,
-    },
-    {
-        name: "Redux Toolkit",
-        icon: redux,
-    },
-    {
-        name: "Tailwind CSS",
-        icon: tailwind,
-    },
-    {
-        name: "Node JS",
-        icon: nodejs,
-    },
-    {
-        name: "MongoDB",
-        icon: mongodb,
-    },
-    {
-        name: "Three JS",
-        icon: threejs,
-    },
-    {
-        name: "git",
-        icon: git,
-    },
-    {
-        name: "figma",
-        icon: figma,
-    },
-    {
-        name: "docker",
-        icon: docker,
-    },
-];
-
-const counterItems = [
-    {value: 10, suffix: "+", label:"Years of Experience"},
-    {value: 200, suffix: "+", label:"Years of Experience"},
-    {value: 190, suffix: "+", label:"Years of Experience"},
-    {value: 110, suffix: "%", label:"Years of Experience"},
-]
-const testimonials = [
-    {
-        testimonial:
-            "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-        name: "Sara Lee",
-        designation: "CFO",
-        company: "Acme Co",
-        image: "https://randomuser.me/api/portraits/women/4.jpg",
-    },
-    {
-        testimonial:
-            "I've never met a web developer who truly cares about their clients' success like Rick does.",
-        name: "Chris Brown",
-        designation: "COO",
-        company: "DEF Corp",
-        image: "https://randomuser.me/api/portraits/men/5.jpg",
-    },
-    {
-        testimonial:
-            "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-        name: "Lisa Wang",
-        designation: "CTO",
-        company: "456 Enterprises",
-        image: "https://randomuser.me/api/portraits/women/6.jpg",
-    },
-];
 
 const projects = [
     {
@@ -234,7 +118,7 @@ const abilities = [
 const expCards = [
     {
         imgPath: "/images/review.png",
-        logoPath: "/images/logos/company-logo-1.png",
+        logoPath: uniIcon,
         title: "Estudante de Ciência da Computação na Universidade Federal de Alfenas",
         date: "2024 - 2027",
         responsibilities: [
@@ -244,7 +128,7 @@ const expCards = [
     },
     {
         imgPath: "/images/review.png",
-        logoPath: "/images/logos/company-logo-1.png",
+        logoPath: profIcon,
         title: "Professora Voluntária – Projeto Desenvolvimento Humano: Saúde, Educação e Trabalho",
         date: "março 2025 - julho 2025",
         responsibilities: [
@@ -253,21 +137,23 @@ const expCards = [
         ]
     },
     {
-        imgPath: "/images/review.png",
-        logoPath: "/images/logos/company-logo-1.png",
-        title: "sla",
+        imgPath: sisIcon,
+        logoPath: sisIcon,
+        title: " Bolsista PET TECHSUS",
         date: "Março 2024 - Atualmente",
         responsibilities: [
-            "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+            "Por meio da minha participação no PET TechSUS, tenho a oportunidade de vivenciar a metodologia Scrum. Atuando no papel de Scrum Master em meu time, venho adquirindo um conhecimento sólido em Scrum e métodos ágeis," +
+            " além de exercer a função de facilitadora de processos, aplicando soft skills como liderança servidora, comunicação, e resolução de conflitos."
         ]
     },
     {
         imgPath: "/images/review.png",
-        logoPath: "/images/logos/company-logo-1.png",
+        logoPath: studyIcon,
         title: "Busca constante de aprendizados",
         date: "",
         responsibilities: [
-            "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+            "Estou em constante busca por aprimoramento profissional, participando de bootcamps, palestras e outras iniciativas de capacitação," +
+            " sempre em busca de novas oportunidades de aprendizado e desenvolvimento contínuo."
         ]
     },
 ];
@@ -278,9 +164,9 @@ const techStackIcons = [
         percentage: 80,
     },
     {
-        name: "Git & GitHub",
-        icon: gitIcon,
-        percentage: 98,
+        name: "Python",
+        icon: pyIcon,
+        percentage: 38,
     },
     {
         name: "C++",
@@ -288,15 +174,20 @@ const techStackIcons = [
         percentage: 60,
     },
     {
-        name: "VS Code",
-        icon: "/assets/tech/node.png",
-        percentage: 100,
+        name: "Git & GitHub",
+        icon: gitIcon,
+        percentage: 98,
     },
     {
-        name: "Node",
-        icon: "/assets/tech/node.png",
-        percentage: 10,
+        name: "Integração de APIs",
+        icon: apIcon,
+        percentage: 80,
+    },
+    {
+        name: "VS Code & Intellij IDEA",
+        icon: idIcon,
+        percentage: 100,
     },
 ];
 
-export { services, technologies, testimonials, projects, counterItems, abilities,  expCards, techStackIcons };
+export { projects, abilities,  expCards, techStackIcons };
