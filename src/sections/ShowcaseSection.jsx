@@ -42,7 +42,6 @@ const ShowcaseSection = () => {
     return (
         <section id="work" ref={sectionRef} className="w-full bg-black py-20 overflow-hidden">
             <div className="w-full px-6 md:px-12">
-
                 <TitleHeader
                     title="Meus Projetos"
                     sub="Destaques da minha recente jornada de desenvolvimento"
@@ -59,12 +58,13 @@ const ShowcaseSection = () => {
                                 <img
                                     src={project.img}
                                     alt={project.title}
-                                    className="w-full h-[350px] md:h-[450px] object-cover transition-transform duration-1000 group-hover:scale-105"
+                                    className="w-full h-[300px] md:h-[450px] object-cover transition-transform duration-1000 group-hover:scale-105"
                                 />
-                                <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 flex flex-col justify-end p-8 text-center md:text-left">
-                                    <div className="transform translate-y-6 group-hover:translate-y-0 transition-transform duration-500">
-                                        <h3 className="text-[#f4b4c2] font-bold text-2xl mb-2">{project.title}</h3>
-                                        <p className="text-white/80 text-sm mb-5 line-clamp-2">{project.desc}</p>
+                                {/* Ajustado: Opacidade total no mobile, hover no desktop */}
+                                <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent opacity-100 md:opacity-0 md:group-hover:opacity-100 transition-all duration-500 flex flex-col justify-end p-6 md:p-8 text-center md:text-left">
+                                    <div className="transform translate-y-0 md:translate-y-6 md:group-hover:translate-y-0 transition-transform duration-500">
+                                        <h3 className="text-[#f4b4c2] font-bold text-xl md:text-2xl mb-2">{project.title}</h3>
+                                        <p className="text-white/90 text-sm mb-5 line-clamp-2">{project.desc}</p>
                                         <a
                                             href={project.link}
                                             target="_blank"
